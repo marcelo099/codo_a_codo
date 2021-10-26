@@ -1,0 +1,112 @@
+.div_formulario{
+    text-align: center;
+}
+.navbar{
+    letter-spacing: 0px;
+    font-size: 20px !important;
+    text-align: right;
+}
+.nav-link{
+    padding-inline-start: 0.5rem;
+}
+
+.navbar-right{
+    float: right !important;
+    margin-right: 25px;
+    color: white;
+}
+#id_navbar_A{
+    color: white;
+    font-size: 25px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+#id_navbar{
+    color: white !important;
+    font-size: 15px;
+}
+.ul{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    float: right !important;
+    margin-right: -15px;
+}
+
+#boton_js{
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 4px 2px; 
+}
+.primer_texto {
+    position: absolute;
+    top: 1350px;
+    left: 670px;
+    color: white;
+}
+.segundo_texto {
+    position: absolute;
+    top: 1390px;
+    left: 670px;
+    color: white;
+    font-size: smaller;
+}
+.tercero_texto {
+    position: absolute;
+    top: 1410px;
+    left: 670px;
+    color: white;
+    font-size: smaller;
+}
+.cuarto_texto {
+    position: absolute;
+    top: 1430px;
+    left: 670px;
+    color: white;
+    font-size: smaller;
+}
+.quinto_texto {
+    position: absolute;
+    top: 1450px;
+    left: 670px;
+    color: white;
+    font-size: smaller;
+}
+#boton_conocer_mas{
+    position: absolute;
+    top: 1480px;
+    left: 670px;
+    border: solid 0.5px;
+    border-radius: 7px;
+}
+#prueba{
+    font-size: 13px;
+    margin-right: 0px;
+    color: white;
+}
+#navbar_2{
+    font-size: 5px;
+}
+#navbar_inferior{
+    height: 80px;
+    color: white;
+    font-size: 1rem;
+    margin-right: 55px;
+    padding-right: 10px;
+    padding-top: 25px;
+}
+.card-body{
+    padding-right: 0rem;
+    padding-left: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+#clase_columna_tarjetas{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#parrafos{
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+}

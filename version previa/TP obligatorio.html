@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TP Integrador</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .div_formulario{
+            text-align: center;
+        }
+        .div_textos{
+            text-align: right;
+        }
+        .navbar{
+            letter-spacing: 0px;
+            font-size: 20px !important;
+            text-align: right;
+        }
+        .nav-link{
+            padding-inline-start: 0.5rem;
+        }
+
+        .navbar-right{
+            float: right !important;
+            margin-right: 25px;
+            color: white;
+        }
+        #id_navbar_A{
+            color: white;
+            font-size: 25px;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        #id_navbar{
+            color: white !important;
+            font-size: 15px;
+        }
+        .ul{
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            padding-inline-start: 40px;
+            float: right !important;
+            margin-right: -15px;
+        }
+        #boton_js{
+            border-radius: 5px;
+            font-size: 12px;
+            margin: 4px 2px; 
+        }
+        #parrafoSuperior{
+            position: absolute;
+            top: 380px;
+            left: 1100px;
+            color: white;
+        }
+        #parrafoSuperior1{
+            position: absolute;
+            justify-content: right;
+            top: 400px;
+            left: 9px;
+            color: white;
+        }
+        #parrafoSuperior2{
+            position: absolute;
+            justify-content: right;
+            top: 420px;
+            left: 700px;
+            color: white;
+        }
+        #parrafoSuperior3{
+            position: absolute;
+            justify-content: right;
+            top: 440px;
+            left: 765px;
+            color: white;
+        }
+        #parrafoSuperior4{
+            position: absolute;
+            justify-content: right;
+            top: 460px;
+            left: 790px;
+            color: white;
+        }
+        #parrafoSuperior5{
+            position: absolute;
+            justify-content: right;
+            top: 480px;
+            left: 750px;
+            color: white;
+        }
+        #parrafoSuperior6{
+            position: absolute;
+            justify-content: right;
+            top: 500px;
+            left: 950px;
+            color: white;
+        }
+        .primer_texto {
+            position: absolute;
+            top: 1370px;
+            left: 670px;
+            color: white;
+        }
+        .segundo_texto {
+            position: absolute;
+            top: 1400px;
+            left: 670px;
+            color: white;
+            font-size: smaller;
+        }
+        .tercero_texto {
+            position: absolute;
+            top: 1420px;
+            left: 670px;
+            color: white;
+            font-size: smaller;
+        }
+        .cuarto_texto {
+            position: absolute;
+            top: 1440px;
+            left: 670px;
+            color: white;
+            font-size: smaller;
+        }
+        .quinto_texto {
+            position: absolute;
+            top: 1460px;
+            left: 670px;
+            color: white;
+            font-size: smaller;
+        }
+        #boton_conocer_mas{
+            position: absolute;
+            top: 1490px;
+            left: 670px;
+            border: solid 0.5px;
+            border-radius: 5px;
+        }
+        #boton_1{
+            position: absolute;
+            top: 560px;
+            left: 1000px;
+            border: solid 0.5px;
+            border-radius: 5px;
+            color: white;
+        }
+        #boton_2{
+            position: absolute;
+            top: 560px;
+            left: 1120px;
+            border: solid 0.5px;
+            border-radius: 5px;
+            color: white;
+        }
+        #prueba{
+            font-size: 13px;
+            margin-right: 0px;
+            color: white;
+        }
+        #navbar_2{
+            font-size: 5px;
+        }
+        #navbar_inferior{
+            height: 80px;
+            color: white;
+            font-size: 1rem;
+            margin-right: 55px;
+            padding-right: 10px;
+            padding-top: 25px;
+        }
+        .card-body{
+            padding-right: 0rem;
+            padding-left: 0rem;
+            padding-top: 0rem;
+            padding-bottom: 0rem;
+        }
+        #clase_columna_tarjetas{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        #parrafos{
+            padding-bottom: 0rem;
+            margin-bottom: 0rem;
+        }
+        #parrafoTarjetas{
+            padding-left: 10px;
+        }
+        #parrafoBotones{
+            padding-left: 0.25rem;
+            line-height: 1rem;
+        }
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-offset="60">
+
+<!-- Pongo el navbar superior -->
+
+   <nav class="navbar navbar-default bg-dark">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" id="id_navbar_A" href="codo.jpg"><img src="codo.jpg">Conf Bs As</a>
+      </div>
+      <div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item" id="id_navbar"><a class="nav-link text-light" href="#">La conferencia</a></li>
+            <li class="nav-item" id="id_navbar"><a class="nav-link text-secondary" href="#">Los oradores</a></li>            
+            <li class="nav-item" id="id_navbar"><a class="nav-link text-secondary" href="#">El lugar y la fecha</a></li>
+            <li class="nav-item" id="id_navbar"><a class="nav-link text-secondary" href="#">Conviértete en orador</a></li>
+            <li class="nav-item" id="id_navbar"><a class="nav-link text-success">Comprar tickets</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+
+<!-- Pongo el texto que va en la imagen -->
+<div class="div_textos">
+    <h3 class="primer_texto" id="parrafoSuperior"><b>Conf Bs As</b></h3>
+    <br>
+       <p id="parrafoSuperior2"><b>Buenos Aires llega por primera vez a Argentina. Un evento para compartir con </b></p>
+       <p id="parrafoSuperior3"><b>nuestra comunidad el conocimiento y experiencia de los expertos que </b></p>
+       <p id="parrafoSuperior4"><b>están creando el futuro de Internet. Ven a conocer a miembros del </b></p>
+       <p id="parrafoSuperior5"><b>evento, a otros estudiantes de Codo a Codo y los operadores de primer </b></p>
+       <p id="parrafoSuperior6"><b>nivel que tenemos para ti. Te esperamos! </b></p>
+        <div class="container-fluid row">
+           <button class="btn bg-transparent btn-sm" id="boton_1"><b>Quiero ser orador</b></button>
+           <button class="btn bg-success btn-sm" id="boton_2"><b>Comprar tickets!</b></button>
+        </div> 
+</div>
+
+<!-- Pongo la imagen del edificio; arreglar desde acá -->
+    <div class="container-fluid row">
+
+        <img class="card-img-top" src="ba1.jpg" style="width:100%" height="600px">
+
+    </div>
+
+<br>
+
+  <div class="div_formulario">
+    <p id="parrafos">CONOCE A LOS
+    <h2 id="parrafos">ORADORES</h2></p>
+ </div>
+
+<!-- Pongo las tarjetas -->
+<div class="container">
+
+    <div class="card-deck">
+
+        <div class="row">
+            <div class="col" id="clase_columna_tarjetas">
+              <div class="card">
+                <div class="card-body">
+                  <img class="card-img-top" src="steve.jpg" alt="Card image">
+                  <br><br>
+                  <button class="btn btn-warning btn-sm" id="parrafoBotones"><b>Javascript</b></button>
+                  <button class="btn btn-primary btn-sm" id="parrafoBotones"><b>React</b></button>
+                  <h5 class="card-title"  id="parrafoTarjetas"><b>Steve Jobs</b></h5>
+                  <p id="parrafoTarjetas">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! 
+                    Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam ratione!</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <img class="card-img-top" src="bill.jpg" alt="Card image">
+                    <br><br>
+                    <button class="btn btn-warning btn-sm" id="parrafoBotones"><b>Javascript</b></button>
+                    <button class="btn btn-primary btn-sm" id="parrafoBotones"><b>React</b></button>
+                    <h5 class="card-title" id="parrafoTarjetas"><b>Bill Gates</b></h5>
+                    <p id="parrafoTarjetas">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! 
+                        Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam ratione!</p>
+                  </div>
+                </div>
+            </div>
+
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <img class="card-img-top" src="Ada.jpg" alt="Card image">
+                    <br><br>
+                    <div>
+                        <button class="btn btn-dark btn-sm"  id="parrafoBotones"><b>Negocios</b></button>
+                        <button class="btn btn-danger btn-sm" id="parrafoBotones"><b>Startups</b></button>
+                    </div>
+                    <h5 class="card-title" id="parrafoTarjetas"><b>Ada Lovelace</b></h5>
+                    <p id="parrafoTarjetas">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! 
+                        Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam ratione!</p>   
+                  </div>
+                </div>
+              </div>
+
+          </div>        
+
+    </div>
+</div>
+	<br>
+
+    <div class="container-fluid row">
+
+        <img class="card-img-top" src="costa.jpg" style="width:50%" height="340px">
+        <img class="card-img-top" src="gris_dark.jpg" style="width:50%" height="340px"> 
+        <h3 class="primer_texto ">Bs As - Octubre</h3>
+        <br><br>
+        <p class="segundo_texto">Buenos Aires es la provincia y localidad mas grande del Estado de Argentina, en los Estados Unidos, 
+            Honolulu es la </p>
+           <p class="tercero_texto">mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere 
+              al área </p>
+           <p class="cuarto_texto">urbana de la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad </p>
+           <p class="quinto_texto">condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie). </p>
+        </p>
+        <button class="btn btn-dark btn-sm" id="boton_conocer_mas"><b>Conocé más.</b></button>
+    </div>
+
+    <br>
+
+	<!-- Región del formulario -->
+    <div class="div_formulario">
+        <p id="parrafos">CONVIÉRTETE EN UN</p>
+        <h2 id="parrafos">ORADOR</h2>
+        <p id="parrafos">Anótate como orador para dar la charla ignite. Cuéntanos de que quieres hablar!</p>
+    </div>
+
+    <div class="m-0 vh-1 row justify-content-center align-items-center" >
+            <form class="col-sm-6 form-group form-horizontal" style="margin:0 auto">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Nombre">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+                        </div>
+                    </div>
+                    <div>
+                        <textarea class="form-control" id="comments" name="comments" style="font-size: 20px;"
+                        placeholder="Sobre qué quieres hablar?" rows="2"></textarea>
+                    </div>
+                    <p class="text-secondary" id="parrafoDesactivado">Recuerda incluir un título para la charla</p>
+                <div class="col-sm-offset-12">
+                    <button type="submit" class="btn btn-block btn-success"><b>Enviar</b></button>
+                </div>
+            </form>
+    </div>
+
+<br>
+<!-- Pongo el navbar inferior -->
+
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark justify-content-center">
+    
+    <ul class="nav justify-content-center font-size:1rem">
+        <li class="nav-item"><a class="navbar-brand" href="#" id="navbar_inferior"> Preguntas <br> frecuentes </a></li>
+        <li class="nav-item"><a class="navbar-brand" href="#" id="navbar_inferior"> Contáctanos</a></li>
+        <li class="nav-item"><a class="navbar-brand" href="#" id="navbar_inferior"> Prensa </a></li>
+        <li class="nav-item"><a class="navbar-brand" href="#" id="navbar_inferior"> Conferencia </a></li>
+        <li class="nav-item"><a class="navbar-brand" href="#" id="navbar_inferior"> Términos y <br> Condiciones </a></li>
+        <li class="nav-item"><a class="navbar-brand" href="#" id="navbar_inferior"> Privacidad </a></li>
+        <li class="nav-item"><a class="navbar-brand" href="#" id="navbar_inferior"> Estudiantes </a></li>
+    </ul>
+
+  </nav>
+
+</body>
+
+</html>
